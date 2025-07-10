@@ -16,11 +16,3 @@ Here are some ideas to get you started:
 -->
 ![kajiyanaoki's GitHub stats](https://github-readme-stats.vercel.app/api?username=kajiya-naoki-sys&show_icons=true&theme=default)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kajiya-naoki-sys&layout=compact)
-name: Full-year calendar
-uses: lowlighter/metrics@latest
-with:
-  filename: metrics.plugin.isocalendar.fullyear.svg
-  token: ${{ secrets.METRICS_TOKEN }}
-  base: ""
-  plugin_isocalendar: yes
-  plugin_isocalendar_duration: full-year
