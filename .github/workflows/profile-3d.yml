@@ -16,12 +16,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
       - name: Commit & Push
+        env:
+          REPO_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+          REPO_NAME: ${{ github.repository }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-          # GitHub URL を Personal Access Token 経由に書き換え
-          git remote set-url origin https://x-access-token:${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}
+          # ★ 環境変数で渡すように修正（←これがポイント！）
+          git remote set-url origin https://x-access-token:$REPO_TOKEN@github.com/$REPO_NAME
 
           git add -A .
           if git diff --cached --quiet; then
