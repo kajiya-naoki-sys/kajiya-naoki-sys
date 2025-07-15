@@ -19,7 +19,15 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+
+          # GitHub URL を Personal Access Token 経由に書き換え
+          git remote set-url origin https://x-access-token:${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}
+
           git add -A .
-          if git commit -m "generated"; then
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "generated"
             git push
           fi
+
