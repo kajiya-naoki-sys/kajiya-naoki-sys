@@ -18,5 +18,5 @@ Here are some ideas to get you started:
     <img align="left" src="https://github-readme-stats.vercel.app/api?username=kajiya-naoki-sys&count_private=true&show_icons=true" />
 </a>
 <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kajiya-naoki-sys&hide=jupyter%20notebook,shaderlab,tex,shell,makefile,Batchfile,c%23&langs_count=9" />
+    <img align="left" src="https://github-readme-stats-sooty-eta-60.vercel.app/api/top-langs/?username=kajiya-naoki-sys&count_private=true&langs_count=10&hide=jupyter%20notebook,Shell,makefile" />
 </a>
