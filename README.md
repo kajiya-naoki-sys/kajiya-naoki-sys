@@ -14,4 +14,4 @@
 
 
 [![Anurag's GitHub stats](https://github-stats-extended.vercel.app/api?username=kajiya-naoki-sys)](https://github.com/stats-organization/github-stats-extended)
-[![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=kajiya-naoki-sys&hide=jupyter%20notebook,shell,Makefile)](https://github.com/stats-organization/github-stats-extended)
+[![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=kajiya-naoki-sys&hide=jupyter%20notebook,shell,Makefile&langs_count=10)](https://github.com/stats-organization/github-stats-extended)
